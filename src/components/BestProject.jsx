@@ -2,10 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import './BestProject.css';
 
-const images = [
-  '/1.png', '/2.png',
-  '/3.png', '/4.png',
-  '/5.png', '/6.png'
+const projects = [
+  { img: '/1.png', url: 'https://schools18.com/' },
+  { img: '/2.png', url: 'https://www.collegedisha.com/' },
+  { img: '/3.png', url: 'https://sunpay.co.in/' },
+  { img: '/4.png', url: 'https://dapachecking.com/' },
+  // ...baaki projects agar hain toh unko bhi isi format me add karein
 ];
 
 const filters = [
@@ -32,15 +34,18 @@ const BestProject = () => {
         ))}
       </div>
       <div className="best-project-grid">
-        {images.map((img, idx) => (
-          <div key={img} className="best-project-image-wrapper">
-            <Image
-              src={img}
-              alt={`Project ${idx + 1}`}
-              width={480}
-              height={340}
-              className="best-project-image"
-            />
+        {projects.map((project, idx) => (
+          <div key={project.img} className="best-project-image-wrapper">
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <Image
+                src={project.img}
+                alt={`Project ${idx + 1}`}
+                width={400}
+                height={220}
+                className="best-project-image"
+                style={{ objectFit: 'contain' }}
+              />
+            </a>
           </div>
         ))}
       </div>

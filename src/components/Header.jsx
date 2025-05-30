@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useRef, useEffect, useState } from 'react';
-import { FaInstagram, FaFacebook, FaRocket, FaPhone, FaSync } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaRocket, FaPhone, FaSync, FaBars, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import Lottie from 'lottie-react';
@@ -37,6 +37,7 @@ const Header = () => {
   const [robotActive, setRobotActive] = useState(false);
   const statsRef = useRef(null);
   const [showCounters, setShowCounters] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,7 +78,6 @@ const Header = () => {
 
   return (
     <header className="header-container">
-
       <nav className="header-nav">
         <div className="header-logo">
           <Image src="/logo.png" alt="MayDiv Logo" width={150} height={50} />
@@ -93,7 +93,30 @@ const Header = () => {
           <a href="#" aria-label="Instagram"><FaInstagram /></a>
           <a href="#" aria-label="Facebook"><FaFacebook /></a>
         </div>
+        <button className="header-hamburger" onClick={() => setMobileMenuOpen(true)} aria-label="Open menu">
+          <FaBars />
+        </button>
       </nav>
+      {mobileMenuOpen && (
+        <div className="mobile-menu-overlay" onClick={() => setMobileMenuOpen(false)}>
+          <div className="mobile-menu" onClick={e => e.stopPropagation()}>
+            <button className="mobile-menu-close" onClick={() => setMobileMenuOpen(false)} aria-label="Close menu">
+              <FaTimes />
+            </button>
+            <ul className="mobile-menu-links">
+              <li><Link href="#home" onClick={() => setMobileMenuOpen(false)}>Home</Link></li>
+              <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link></li>
+              <li><Link href="/projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link></li>
+              <li><Link href="/testimonials" onClick={() => setMobileMenuOpen(false)}>Testimonials</Link></li>
+              <li><Link href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link></li>
+            </ul>
+            <div className="mobile-menu-socials">
+              <a href="#" aria-label="Instagram"><FaInstagram /></a>
+              <a href="#" aria-label="Facebook"><FaFacebook /></a>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="header-hero">
         <h1>
           <span className="gradient-text">Interactive Digital Solutions</span><br />

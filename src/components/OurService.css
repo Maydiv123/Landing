@@ -96,3 +96,36 @@
   width: 1200px;
   height: 540px;
 }
+
+@media (max-width: 480px) {
+  .our-services-section {
+    padding: 2rem 0;
+  }
+
+  .our-services-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .service-card {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .service-card-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .service-card::before {
+    border-radius: 16px;
+  }
+
+  .service-card::after {
+    border-radius: 16px;
+  }
+}
