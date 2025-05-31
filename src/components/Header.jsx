@@ -93,7 +93,7 @@ const Header = () => {
           <a href="#" aria-label="Instagram"><FaInstagram /></a>
           <a href="#" aria-label="Facebook"><FaFacebook /></a>
         </div>
-        <button className="header-hamburger" onClick={() => setMobileMenuOpen(true)} aria-label="Open menu">
+        <button className={`header-hamburger${mobileMenuOpen ? ' menu-open' : ''}`} onClick={() => setMobileMenuOpen(true)} aria-label="Open menu">
           <FaBars />
         </button>
       </nav>

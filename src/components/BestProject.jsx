@@ -7,6 +7,9 @@ const projects = [
   { img: '/2.png', url: 'https://www.collegedisha.com/' },
   { img: '/3.png', url: 'https://sunpay.co.in/' },
   { img: '/4.png', url: 'https://dapachecking.com/' },
+  { img: '/5.png', url: 'https://fika-india.com/' },
+  { img: '/6.png', url: 'https://www.dapchecking.com/' },
+
   // ...baaki projects agar hain toh unko bhi isi format me add karein
 ];
 
