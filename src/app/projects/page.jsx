@@ -3,6 +3,7 @@ import OurService from '../../components/OurService';
 import Footer from '../../components/Footer';
 import BestProject from '../../components/BestProject';
 import Discuss from '../../components/Discuss';
+import ContactSection from '../../components/ContactSection';
 import Link from 'next/link';
 
 export default function Projects() {
