@@ -8,7 +8,7 @@ const projects = [
   { img: '/3.png', url: 'https://sunpay.co.in/' },
   { img: '/4.png', url: 'https://dapachecking.com/' },
   { img: '/5.png', url: 'https://fika-india.com/' },
-  { img: '/6.png', url: 'https://melanie-theta.vercel.app/' },
+  { img: '/6.png', url: 'https://www.dapchecking.com/' },
 
   // ...baaki projects agar hain toh unko bhi isi format me add karein
 ];
@@ -22,7 +22,7 @@ const filters = [
 
 const BestProject = () => {
   return (
-    <section className="best-project-section">
+    <section className="best-project-section" id="our-projects">
       <h2 className="best-project-heading">BEST PROJECT.</h2>
       {/* Filter Bar */}
       <div className="best-project-filter-bar">

@@ -5,6 +5,8 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  width: 100vw;
+  margin-left: -18px;
  
 }
 
@@ -112,6 +114,8 @@
     margin: 0 !important;
     padding: 1.5rem 0 2rem 0 !important;
     background: #0a0a0a !important;
+    margin-left: -1px !important;
+
   }
   .best-project-heading {
     font-size: 1.4rem !important;

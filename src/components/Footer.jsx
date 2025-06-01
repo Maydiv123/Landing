@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className="footer-section">
       <div className="footer-content">
         <div className="footer-col footer-brand">
-          <div className="footer-logo">MAYDIV</div>
-          <div className="footer-desc">Technology AI Generator Website</div>
+          <div className="footer-logo">MAYDIV Infotech</div>
+          <div className="footer-desc">Creating innovative digital solutions for your business needs.</div>
         </div>
         <div className="footer-col">
           <div className="footer-title">Explore</div>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="footer-col">
           <div className="footer-title">OFFICE LOCATION</div>
-          <div className="footer-address">Address Line Lorem Ipsum Dolore Sit Amet</div>
+          <div className="footer-address">Location: SCO-105,Second Floor,World Street,Faridabad-121004,HR.</div>
         </div>
       </div>
       <div className="footer-bottom">

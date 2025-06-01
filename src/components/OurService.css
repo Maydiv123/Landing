@@ -5,6 +5,9 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  width: 100vw;
+  margin-left: -18px;
+ 
 }
 
 .our-services-cards {
@@ -100,6 +103,8 @@
 @media (max-width: 480px) {
   .our-services-section {
     padding: 2rem 0;
+    margin-left: -7px;
+    width: 100vw;
   }
 
   .our-services-cards {
@@ -127,5 +132,31 @@
 
   .service-card::after {
     border-radius: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .our-services-section {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 2rem 0 !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+  .our-services-cards {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.2rem !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+  .service-card {
+    width: 90vw !important;
+    max-width: 400px !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
   }
 }

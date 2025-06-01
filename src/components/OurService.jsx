@@ -12,7 +12,7 @@ const iconSize = 500; // px, adjust as needed
 
 const OurService = () => {
   return (
-    <section className="our-services-section">
+    <section className="our-services-section" id="our-services">
       {/* Nucleus backgrounds */}
       <Image
         src="/Nucleus.png"

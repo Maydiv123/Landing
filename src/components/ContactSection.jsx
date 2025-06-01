@@ -33,7 +33,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="contact-container">
         <h2 className="contact-heading">Contact Us</h2>
         <form className="contact-form" autoComplete="off" onSubmit={handleSubmit}>

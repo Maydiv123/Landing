@@ -1,6 +1,10 @@
 @media (max-width: 480px) {
   .discuss-section {
     padding: 2rem 0 !important;
+    width: 90vw !important;
+    margin-left: -4px !important;
+    
+    
   }
   .discuss-container {
     padding: 2rem 1rem !important;
@@ -8,6 +12,7 @@
     min-width: 0 !important;
     width: 96vw !important;
     max-width: 98vw !important;
+   
   }
   .discuss-image {
     max-width: 90vw !important;

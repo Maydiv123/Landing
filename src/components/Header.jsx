@@ -84,8 +84,8 @@ const Header = () => {
         </div>
         <ul className="header-links">
           <li><Link href="#home">Home</Link></li>
-          <li><Link href="/services">Services</Link></li>
-          <li><Link href="/projects">Projects</Link></li>
+          <li><Link href="#our-services">Services</Link></li>
+          <li><Link href="#our-projects">Projects</Link></li>
           <li><Link href="/testimonials">Testimonials</Link></li>
           <li><Link href="#contact">Contact</Link></li>
         </ul>
@@ -107,7 +107,7 @@ const Header = () => {
               <li><Link href="#home" onClick={() => setMobileMenuOpen(false)}>Home</Link></li>
               <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link></li>
               <li><Link href="/projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link></li>
-              <li><Link href="/testimonials" onClick={() => setMobileMenuOpen(false)}>Testimonials</Link></li>
+
               <li><Link href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link></li>
             </ul>
             <div className="mobile-menu-socials">
