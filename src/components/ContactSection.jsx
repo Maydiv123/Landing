@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import './ContactSection.css';
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwLTy5skWfAjg3KUf3SAONiVpYy_mADkxpWJn0tR2eoQDK0rd5YBBJ2Pa5Kfua_R-so8g/exec'; // <-- Replace with your deployed Apps Script URL
-
 const ContactSection = () => {
   const [form, setForm] = useState({ name: '', phone: '', email: '', query: '' });
   const [status, setStatus] = useState('');
@@ -16,7 +14,7 @@ const ContactSection = () => {
     e.preventDefault();
     setStatus('');
     try {
-      const res = await fetch(GOOGLE_SCRIPT_URL, {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

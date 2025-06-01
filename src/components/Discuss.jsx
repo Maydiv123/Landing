@@ -1,31 +1,22 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import './Discuss.css';
 
 const Discuss = () => {
   return (
-    <section style={{ background: '#0a0a0a', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '5rem 0', width: '100vw', marginLeft: '-18px' }}>
-      <div style={{ background: 'linear-gradient(180deg, #d414c6 0%, #7e3ff2 100%)', borderRadius: '2.5rem', padding: '5rem 3rem', maxWidth: 1200, width: '96%', minHeight: 180, textAlign: 'center', boxShadow: '0 12px 48px 0 rgba(31, 38, 135, 0.22)' }}>
+    <section className="discuss-section">
+      <div className="discuss-container">
         <Image
           src="/Lets.png"
           alt="Let's Discuss"
           width={900}
           height={120}
-          style={{ maxWidth: '100%', margin: '0 auto 48px', display: 'block', height: 'auto',marginright: '10px' }}
+          className="discuss-image"
         />
-        <div style={{ display: 'flex', gap: 32, justifyContent: 'center', marginTop: 40 }}>
+        <div className="discuss-buttons">
           <button
-            style={{
-              padding: '16px 44px',
-              fontSize: '1.25rem',
-              borderRadius: 40,
-              background: '#000',
-              color: '#fff',
-              border: 'none',
-              cursor: 'pointer',
-              transition: 'all 0.3s',
-              fontWeight: 700
-            }}
+            className="discuss-button discuss-connect"
             onMouseOver={e => {
               e.currentTarget.style.background = '#fff';
               e.currentTarget.style.color = '#000';
@@ -41,17 +32,7 @@ const Discuss = () => {
             Connect Now
           </button>
           <button
-            style={{
-              padding: '16px 44px',
-              fontSize: '1.25rem',
-              borderRadius: 40,
-              background: 'transparent',
-              color: '#fff',
-              border: '2.5px solid #fff',
-              cursor: 'pointer',
-              transition: 'all 0.3s',
-              fontWeight: 700
-            }}
+            className="discuss-button discuss-follow"
             onMouseOver={e => {
               e.currentTarget.style.background = '#fff';
               e.currentTarget.style.color = '#a100ff';

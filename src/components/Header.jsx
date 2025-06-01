@@ -105,9 +105,8 @@ const Header = () => {
             </button>
             <ul className="mobile-menu-links">
               <li><Link href="#home" onClick={() => setMobileMenuOpen(false)}>Home</Link></li>
-              <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link></li>
-              <li><Link href="/projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link></li>
-
+              <li><Link href="#our-services" onClick={() => setMobileMenuOpen(false)}>Services</Link></li>
+              <li><Link href="#our-projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link></li>
               <li><Link href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link></li>
             </ul>
             <div className="mobile-menu-socials">
