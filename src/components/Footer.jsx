@@ -39,7 +39,7 @@ const Footer = () => {
           <a href="#" className="footer-link">Privacy</a>
           <a href="#" className="footer-link">Cookies</a>
         </div>
-        <div className="footer-copyright">© 2025 By Avinash. All Rights Reserved.</div>
+        <div className="footer-copyright">© MayDiv Infotech</div>
         <div className="footer-socials">
           <a href="#" className="footer-social"><i className="fa fa-facebook"></i></a>
           <a href="#" className="footer-social"><i className="fa fa-linkedin"></i></a>

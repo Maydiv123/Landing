@@ -3,7 +3,6 @@
   color: #fff;
   padding: 3rem 0 1.5rem 0;
   font-family: 'Inter', sans-serif;
-  width: 100vw;
   margin-left: -18px;
 
 }
@@ -134,15 +133,17 @@
   .footer-section {
     padding: 1.2rem 0 0.7rem 0 !important;
     margin-left: -5px !important;
-    width: 100vw !important;
+    width: 100%;
+  }
+  .whatsapp-link{
+    margin-left: 120px;
   }
   .footer-content {
     flex-direction: column !important;
     gap: 1rem !important;
     margin-bottom: 1rem !important;
     align-items: center !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
+    width: 100%;
   }
   .footer-col {
     flex: 1 1 100% !important;
@@ -178,8 +179,7 @@
     gap: 0.7rem !important;
     text-align: center !important;
     padding-top: 0.7rem !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
+    width: 100%;
   }
   .footer-bottom-links {
     justify-content: center !important;
