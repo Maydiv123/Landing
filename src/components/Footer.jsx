@@ -25,12 +25,7 @@ const Footer = () => {
         <div className="footer-col">
           <div className="footer-title">OFFICE LOCATION</div>
           <div className="footer-address">Location: SCO-105,Second Floor,World Street,Faridabad-121004,HR.</div><br/>
-          <div className="Whatsapp">
-            <a href="https://wa.me/919220438999" className="whatsapp-link" target="_blank" rel="noopener noreferrer">
-              <img src="/WhatsApp.svg" alt="WhatsApp" style={{ width: 27, height: 27, marginRight: 8, display: 'inline', verticalAlign: 'middle' }} />
-              +91 92204 38999
-            </a>
-          </div>
+          
         </div>
       </div>
       <div className="footer-bottom">

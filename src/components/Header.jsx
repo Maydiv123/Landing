@@ -128,7 +128,7 @@ const Header = () => {
           <button className="primary-btn" style={{ cursor: 'pointer' }}>Get started</button>
           <button className="secondary-btn" style={{ cursor: 'pointer' }}>Our Portfolio</button>
         </div>
-        <div className="header-hero-robot-group" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '620px', margin: '0 auto'}}>
+        <div className="header-hero-robot-group" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', margin: '0 auto',marginTop:'50px'}}>
           <div className="fall-from-top">
             <Lottie
               animationData={require('../../public/Animation.json')}
